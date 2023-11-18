@@ -1,0 +1,14 @@
+1. kreiranje objekta sesije od interfejsa HttpSession 
+
+		HttpSession sesija = request.getSession();
+
+
+2. Cuvanje podataka u sesiji
+
+		sesija.setAttribute("kljuc", vrednost koju cuvamo);
+
+
+3. Uzimanje podatka iz sesije 
+
+
+		String podatak = (String)sesija.getAttribute("kljuc");
